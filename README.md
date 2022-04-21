@@ -4,7 +4,7 @@ I'm a engineering student
 -------------------------
 * 🌍  I'm based in Santiago de Chile
 * ✉️  You can contact me at [borquezmartín@uc.cl](mailto:borquezmartín@uc.cl)
-* * 🧠  I'm learning julia
+* 🧠  I'm learning julia and ML
 
 ### Skills
 
