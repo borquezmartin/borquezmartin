@@ -1,10 +1,11 @@
-Hi 👋 My name is Martín Bórquez
+Welcome to my profile 🤝
 ===============================
-I'm a engineering student
+My name is Martín Bórquez, this are some of my descriptions and interest.
 -------------------------
-* 🌍  I'm based in Santiago de Chile
+* 💼  MSc. Machine Learning & Industrial Engineer @PUC
+* 🌍  I'm from Chile 🇨🇱
 * ✉️  You can contact me at [borquezmartín@uc.cl](mailto:borquezmartín@uc.cl)
-* 🧠  I'm learning julia and ML
+* 🧠  Currently I'm working in recommendation systems, bias detection and different types of NLP tasks.
 
 ### Skills
 
