@@ -1,0 +1,36 @@
+name: GitHub-Profile-3D-Contrib
+
+# Renders the 3D "lego" contribution calendar into profile-3d-contrib/*.svg
+# and commits them back to the repo. The README references the
+# south-season variant (accurate seasons for the Southern Hemisphere 🇨🇱).
+
+on:
+  schedule: # 18:00 UTC daily
+    - cron: "0 18 * * *"
+  workflow_dispatch: # allow manual runs from the Actions tab
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+      - uses: actions/checkout@v5
+      - uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A .
+          if git commit -m "chore: regenerate 3D contribution graph"; then
+            git push
+          fi
